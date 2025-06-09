@@ -1,0 +1,132 @@
+.app-header {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 20px 32px;
+}
+
+.app-header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Space between nav items */
+}
+
+.app-header nav ul li {
+  display: inline;
+}
+
+.app-header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.app-header nav a:hover {
+  color: var(--primary-color); /* Highlight color on hover */
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cinema-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  padding: 0 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+  flex: 1;
+  margin-left: 0;
+}
+
+.cinema-name a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.15em;
+}
+
+.cinema-emoji {
+  font-size: 1.2em;
+  margin-right: 0.3em;
+}
+
+.nav-right {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.nav-right li {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.rect-auth-btn, .rect-auth-btn:link, .rect-auth-btn:visited {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  height: 56px;
+  border-radius: 28px;
+  border: 3px solid #fff !important;
+  background: var(--primary-color) !important;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.13rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none !important;
+  padding: 0 34px 0 30px;
+  letter-spacing: 0.5px;
+  border-style: solid !important;
+  margin-right: 0;
+}
+.rect-auth-btn:hover, .rect-auth-btn:focus {
+  background: #003366 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: 0 4px 16px rgba(0,51,102,0.13);
+  text-decoration: none !important;
+}
+
+@media (max-width: 700px) {
+  .header-flex {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 8px;
+  }
+  .cinema-name {
+    font-size: 1.1rem;
+  }
+  .nav-right {
+    gap: 16px;
+  }
+  .rect-auth-btn {
+    min-width: 80px;
+    height: 38px;
+    font-size: 1rem;
+    padding: 0 16px;
+  }
+}
+
+/* Remove old circle-auth-btn and logout-button styles if present */
+.circle-auth-btn, .logout-button {
+  all: unset;
+} 

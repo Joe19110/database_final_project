@@ -1,0 +1,257 @@
+.profile-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--light-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-container h2,
+  .profile-container h3 {
+    color: var(--dark-color);
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-details {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .info-row {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  
+  .info-row label {
+    min-width: 100px;
+    font-weight: 600;
+    color: #334155;
+  }
+  
+  .info-row span {
+    color: #1e293b;
+  }
+  
+  .edit-input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #1e293b;
+    transition: border-color 0.2s;
+  }
+  
+  .edit-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+  }
+  
+  .edit-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: flex-start;
+  }
+  
+  .edit-btn, .save-btn, .cancel-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .edit-btn {
+    background-color: #334155;
+    color: white;
+    border: none;
+  }
+  
+  .edit-btn:hover {
+    background-color: #475569;
+  }
+  
+  .save-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+  }
+  
+  .save-btn:hover {
+    background-color: #2563eb;
+  }
+  
+  .cancel-btn {
+    background-color: #e2e8f0;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #cbd5e1;
+  }
+  
+  .profile-details p {
+    margin-bottom: 10px;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .purchase-history .transaction-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .purchase-history .transaction-card h4 {
+    margin-top: 0;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .transaction-details p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: var(--text-color);
+  }
+  
+  .showings-list .showing-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1.5rem;
+    gap: 2rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .showing-item img {
+    border-radius: 8px;
+    width: 140px !important;
+    height: 210px !important;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .showing-item > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .showing-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #334155;
+    line-height: 1.5;
+  }
+  
+  .showing-item p strong {
+    color: #1e293b;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    min-width: 80px;
+    display: inline-block;
+  }
+  
+  .showing-status {
+    font-weight: bold;
+    font-size: 0.9em;
+  }
+  
+  @media (max-width: 600px) {
+    .profile-container {
+      padding: 15px;
+    }
+    
+    .showings-list .showing-item {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      gap: 1rem;
+    }
+    
+    .showing-item img {
+      width: 120px !important;
+      height: 180px !important;
+    }
+    
+    .showing-item > div {
+      width: 100%;
+    }
+  }
+  
+  .purchase-history-container {
+    margin-top: 2rem;
+  }
+  
+  .tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .tab-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+  }
+  
+  .tab-button:hover {
+    color: #334155;
+  }
+  
+  .tab-button.active {
+    color: #3b82f6;
+  }
+  
+  .tab-button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #3b82f6;
+  }
+  
+  .tab-content {
+    background: white;
+    border-radius: 8px;
+    min-height: 200px;
+  }
+  
+  .no-transactions {
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+    font-size: 1.1rem;
+  } 
